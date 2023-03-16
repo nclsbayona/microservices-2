@@ -29,3 +29,13 @@ Para esta parte del taller se solicitaba construir un servidor haciendo uso de S
 Instrucciones para ejecutar esta parte:
 1. Verificar que se encuentre en el directorio referente a la parte 2 (Parte-2)
 2. Ejecutar el archivo run.sh (Solo fue probado en Linux), el cual va a levantar diferentes réplicas de cada servicio. En caso de querer ejecutarse en otro sistema operativo, la idea del script es levantar diferentes procesos en background que levanten los diferentes servicios haciendo uso de scripts que se encuentran en los directorios respectivos de cada servicio.
+3. Una vez se han levantado los diferentes servicios, se pueden observar los servicios registrados acceiendo a http://localhost:8761/ . Y pueden ejecutarse solicitudes que hagan uso del balanceador a http://localhost:8888/ + alguna de las URIs especificadas abajo :
+- calculadora/suma -> Sumar dos numeros
+    - Parametros: a -> Numero 1, b -> Numero 2, user -> Usuario que realiza la petición
+- calculadora/resta -> Restar dos numeros
+    - Parametros: a -> Numero 1, b -> Numero 2, user -> Usuario que realiza la petición
+- calculadora/multip -> Multiplicar dos numeros
+    - Parametros: a -> Numero 1, b -> Numero 2, user -> Usuario que realiza la petición
+- calculadora/div -> Dividir dos numeros
+    - Parametros: a -> Numero 1, b -> Numero 2, user -> Usuario que realiza la petición
+- logs -> Ver el historial de peticiones al servidor

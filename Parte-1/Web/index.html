@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Mi Api de Paseos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-min.js"></script>
+</head>
+
+<body>
+    <h1>API</h1>
+    <br />
+    <h2>Lista de Paseos</h2>
+    <label for="get-format">Formato:</label>
+    <select name="get-format" id="get-format">
+        <option value="application/json">JSON</option>
+        <option value="text/xml">XML</option>
+        <option value="text/plain">PLAIN TEXT</option>
+    </select>
+    <button id="get-button">Obtener</button>
+    <div id="get"></div>
+    <hr />
+    <br />
+    <br />
+    <h2>Eliminar paseo</h2>
+    <label for="delete-id">ID:</label>
+    <input id="delete-id" type="number" name="ID" />
+    <button id="delete-button">Eliminar</button>
+    <div id="delete"></div>
+    <hr />
+    <br />
+    <br />
+    <h2>Modificar paseo</h2>
+    <label for="put-id">ID:</label>
+    <input id="put-id" type="number" name="ID" />
+    <label for="put-salida">Salida:</label>
+    <input id="put-salida" name="Salida" type="text" />
+    <label for="put-destino">Destino:</label>
+    <input id="put-destino" name="Destino" type="text" />
+    <label for="put-format">Formato:</label>
+    <select name="put-format" id="put-format">
+        <option value="application/json">JSON</option>
+        <option value="text/xml">XML</option>
+        <option value="text/plain">PLAIN TEXT</option>
+    </select>
+    <button id="put-button">Modificar</button>
+    <div id="put"></div>
+    <hr />
+    <br />
+    <br />
+    <h2>Crear paseo</h2>
+    <label for="post-nombre">Nombre:</label>
+    <input id="post-nombre" name="Nombre" type="text" />
+    <label for="post-salida">Salida:</label>
+    <input id="post-salida" name="Salida" type="text" />
+    <label for="post-destino">Destino:</label>
+    <input id="post-destino" name="Destino" type="text" />
+    <label for="post-fecha">Fecha:</label>
+    <input id="post-fecha" name="Fecha" type="date" />
+    <button id="post-button">Crear</button>
+    <div id="post"></div>
+    <hr />
+    <script src="index.js"></script>
+</body>
+
+</html>

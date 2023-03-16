@@ -1,0 +1,5 @@
+FROM docker.io/maven:3.9.0-eclipse-temurin-17-focal
+WORKDIR /app
+COPY . .
+RUN mvn clean install compile
+ENTRYPOINT [ "sh","run.sh" ]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity-mappings v="5.4.4" rws="_16776101612272" cws="_16776101612272" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_16776101612271" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <entity compositePrimaryKeyClass="PaseoPK" abs="false" class="Paseo" pclass="Entity_1" v="true" xre="false" m="false" rootElement="_16776101612271" id="_16776101702813">
+        <ath>nclsbayona</ath>
+        <attributes>
+            <basic attribute-type="String" v="true" name="nombre" pname="attribute" id="_16776102657746"/>
+            <basic attribute-type="String" v="true" name="lugar_salida" pname="attribute" id="_16776102748327"/>
+            <basic attribute-type="String" v="true" name="lugar_llegada" pname="attribute" id="_16776104058628"/>
+            <basic attribute-type="String" v="true" name="fecha" pname="attribute1" id="_16776104119069">
+                <xwm/>
+                <xm/>
+            </basic>
+            <id attribute-type="Long" v="true" name="id" id="_16776101703054">
+                <generated-value strategy="DEFAULT"/>
+            </id>
+        </attributes>
+        <nq e="false" name="Paseo.findAll">
+            <query>Select e from Paseo e</query>
+        </nq>
+        <nq e="false" name="Paseo.findByNombre">
+            <query>Select p from Paseo p where p.nombre=:nombre</query>
+        </nq>
+        <nq e="false" name="Paseo.findByLugar_salida">
+            <query>Select p from Paseo p where p.lugar_salida=:lugar_salida</query>
+        </nq>
+        <nq e="false" name="Paseo.findByLugar_llegada">
+            <query>Select p from Paseo p where p.lugar_llegada=:lugar_llegada</query>
+        </nq>
+        <nq e="false" name="Paseo.findByFecha">
+            <query>Select p from Paseo p where p.fecha=:fecha</query>
+        </nq>
+    </entity>
+    <c/>
+    <wsl>
+        <ws n="Main" id="_16776101612272">
+            <i ref="_16776101702813" x="503" y="198"/>
+        </ws>
+    </wsl>
+</entity-mappings>

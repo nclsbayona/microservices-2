@@ -1,0 +1,6 @@
+•Para el taller 2, cree un nuevo repositorio público en GitHub y suba todo el código necesario para las partes 1 y 2 del taller. 
+•Defina un archivo readme con instrucciones precisas de los pasos necesarios para correr cada uno de los puntos. 
+•En la wiki del proyecto, incluya dos videos que muestren la correcta ejecución de cada uno de los puntos de cada parte del taller. 
+•Para la entrega, cada grupo debe enviar un correo electrónico a la dirección ca.parraa@javeriana.edu.co con el asunto “Entrega Taller 2 Microservicios y Cloud”
+-En el correo incluya el enlace al repositorio de GitHub e indique el grupo y los integrantes
+-El correo debe enviarse a más tardar el  20 de marzo de 2023
